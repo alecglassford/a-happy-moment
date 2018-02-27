@@ -20,9 +20,8 @@
     "email": "glassford@cs.stanford.edu",
     "url": "https://alecglassford.com"
   },
-  "main": "server.js",
   "scripts": {
-    "start": "micro",
+    "start": "micro server.js",
     "build": "node build.js",
     "test": "eslint .",
     "deploy": "npm test && now --public --dotenv"
