@@ -1,3 +1,8 @@
+/* eslint
+  no-console: "off",
+  import/no-extraneous-dependencies: ["error", { "devDependencies": true }]
+*/
+
 const fs = require('fs');
 const path = require('path');
 
