@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "name": "a-happy-moment",
+  "version": "1.0.0",
+  "description": "😊 Here's a happy moment. Take a breath.",
+  "keywords": [
+    "happy"
+  ],
+  "homepage": "https://github.com/alecglassford/a-happy-moment#readme",
+  "bugs": {
+    "url": "https://github.com/alecglassford/a-happy-moment/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alecglassford/a-happy-moment.git"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Alec Glassford",
+    "email": "glassford@cs.stanford.edu",
+    "url": "https://alecglassford.com"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "micro",
+    "build": "node build.js",
+    "test": "eslint .",
+    "deploy": "npm test && now --public --dotenv"
+  },
+  "devDependencies": {
+    "d3-dsv": "^1.0.8",
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "node-fetch": "^2.0.0"
+  },
+  "dependencies": {
+    "micro": "^9.1.0"
+  },
+  "now": {
+    "alias": "a-happy-moment.now.sh",
+    "dotenv": true,
+    "files": [
+      "build.js",
+      "server.js"
+    ]
+  }
+}
